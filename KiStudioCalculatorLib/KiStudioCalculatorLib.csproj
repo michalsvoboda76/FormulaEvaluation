@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="12.0.3">
+		</PackageReference>
+		<PackageReference Include="NReco.LambdaParser" Version="1.0.12">
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="index.html">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="IF &quot;%25NCrunch%25&quot;==&quot;1&quot; exit&#xD;&#xA;&#xD;&#xA;set MONO_BIN=C:\Program Files\Mono\bin\&#xD;&#xA;set WASM_SDK=$(SolutionDir)WasmSDK\mono-wasm-047ed897ddc\&#xD;&#xA;set PUBLISH_WASM_FOLDER=$(TargetDir)..\publish_wasm&#xD;&#xA;&#xD;&#xA;echo.&#xD;&#xA;echo WASM is going to be published here: %25PUBLISH_WASM_FOLDER%25&#xD;&#xA;echo.&#xD;&#xA;&#xD;&#xA;&quot;%25MONO_BIN%25mono&quot; %25WASM_SDK%25packager.exe --copy=always --out=%25PUBLISH_WASM_FOLDER%25 --search-path=$(TargetDir) --asset=index.html $(TargetDir)KiStudioCalculatorLib.dll &#xD;&#xA;" />
+	</Target>
+
+</Project>

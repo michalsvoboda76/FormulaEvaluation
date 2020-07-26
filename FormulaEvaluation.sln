@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NRecoLinqLambdaParser", "NRecoLinqLambdaParser\NRecoLinqLambdaParser.csproj", "{E8352B93-59A6-4914-A24F-59D3ED042C08}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KiStudioCalculator", "KiStudioCalculator\KiStudioCalculator.csproj", "{20B4A18B-9D34-4A3B-8C22-7EEB0B29C9E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KiStudioCalculatorLib", "KiStudioCalculatorLib\KiStudioCalculatorLib.csproj", "{914FE2A4-0467-462D-9159-06FD4DC31B5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8352B93-59A6-4914-A24F-59D3ED042C08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8352B93-59A6-4914-A24F-59D3ED042C08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8352B93-59A6-4914-A24F-59D3ED042C08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8352B93-59A6-4914-A24F-59D3ED042C08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20B4A18B-9D34-4A3B-8C22-7EEB0B29C9E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20B4A18B-9D34-4A3B-8C22-7EEB0B29C9E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20B4A18B-9D34-4A3B-8C22-7EEB0B29C9E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20B4A18B-9D34-4A3B-8C22-7EEB0B29C9E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{914FE2A4-0467-462D-9159-06FD4DC31B5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{914FE2A4-0467-462D-9159-06FD4DC31B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{914FE2A4-0467-462D-9159-06FD4DC31B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{914FE2A4-0467-462D-9159-06FD4DC31B5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C49F25DB-90D9-4BB7-BB3D-1F308BB9E06F}
+	EndGlobalSection
+EndGlobal
